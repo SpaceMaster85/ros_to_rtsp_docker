@@ -50,8 +50,8 @@ COPY mediamtx.yml /root/ros_ws/mediamtx.yml
 EXPOSE 8554
 
 # Kopiere das Startskript
-COPY entrypoint.sh /root/entrypoint.sh
-RUN chmod +x /root/entrypoint.sh
+COPY docker_entrypoint.sh /root/docker_entrypoint.sh
+RUN chmod +x /root/docker_entrypoint.sh
 
 # Standardbefehl zum Starten des Containers
-CMD ["/root/entrypoint.sh"]
+CMD ["/root/docker_entrypoint.sh"]
