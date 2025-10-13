@@ -1,0 +1,28 @@
+############################################################
+# MediaMTX Konfiguration für ROS2 + GStreamer
+# Unterstützt RTSP Push (rtspclientsink) & UDP Pull (udpsink)
+############################################################
+
+ # Standard RTSP-Port
+rtspAddress: :8554
+
+# Logging (optional)
+logLevel: info
+
+############################################################
+# Definition der Stream-Pfade
+############################################################
+paths:
+
+  ##########################################################
+  # RTSP Push: GStreamer pusht direkt an /camera
+  ##########################################################
+  camera:
+    # Erlaubt Push via RTSP (von rtspclientsink)
+    publishUser: ""
+    publishPass: ""
+
+  camera1:
+    # Erlaubt Push via RTSP (von rtspclientsink)
+    publishUser: ""
+    publishPass: ""
