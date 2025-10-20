@@ -17,12 +17,12 @@ paths:
   ##########################################################
   # RTSP Push: GStreamer pusht direkt an /camera
   ##########################################################
-  camera0:
+  camera1:
     # Erlaubt Push via RTSP (von rtspclientsink)
     publishUser: ""
     publishPass: ""
 
-  camera1:
+  camera2:
     # Erlaubt Push via RTSP (von rtspclientsink)
     publishUser: ""
     publishPass: ""

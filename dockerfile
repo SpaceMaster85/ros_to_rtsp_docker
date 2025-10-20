@@ -47,7 +47,7 @@ RUN . /opt/ros/$ROS_DISTRO/setup.sh && colcon build --symlink-install
 COPY mediamtx.yml /root/ros_ws/mediamtx.yml
 
 # Exponiere RTSP-Port
-EXPOSE 8554
+#EXPOSE 8554
 
 # Kopiere das Startskript
 COPY docker_entrypoint.sh /root/docker_entrypoint.sh
